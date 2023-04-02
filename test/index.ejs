@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+  </head>
+  <body>
+    <h1>Users</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Age</th>
+          <th>City</th>
+          <th>Profession</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% for (let user of users) { %>
+          <tr>
+            <td><%= user.name %></td>
+            <td><%= user.email %></td>
+            <td><%= user.age %></td>
+            <td><%= user.city %></td>
+            <td><%= user.profession %></td>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+    <a href="/user/add">Add User</a>
+  </body>
+</html>
